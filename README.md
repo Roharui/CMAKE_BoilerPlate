@@ -9,11 +9,11 @@ Cmake 설정을 하기 귀찮으신 분들을 위한 보일러 플레이트입�
 > [여기](https://chocolatey.org/install)서 choco를 먼저 설치해주세요.
 
 ```
-choco install cmake.install msys2
+choco install msys2
 pacman -S mingw-w64-x86_64-gcc
 pacman -S mingw-w64-x86_64-gtest
-mv C:/tools/msys64/mingw64/bin/mingw32-make.exe C:/tools/msys64/mingw64/bin/make.exe
-setx Path "%Path%;C:/tools/msys64/mingw64/bin"
+pacman -S mingw-w64-x86_64-cmake
+pacman -S mingw-w64-x86_64-ninja
 ```
 
 다음 명령어를 순서대로 입력합니다.
